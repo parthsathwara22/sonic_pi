@@ -2,7 +2,7 @@ use_bpm 84
 
 #defining individual parts
 
-##introparts
+#introparts
 
 #introchime
 define :introchime do
@@ -37,7 +37,7 @@ define :intropad do
   end
 end
 
-##first hit parts
+#first hit parts
 
 #bassattack
 define :bassattack do
@@ -263,8 +263,7 @@ define :thirdhitsweep do
   end
 end
 
-
-##outro
+#outro
 
 #outropad
 define :outropad do
@@ -280,13 +279,6 @@ define :outropad do
   sleep 0.75
   play :gb4, attack: 1, sustain: 5.5, release: 5
 end
-
-
-
-
-
-
-
 
 #defining arrangement blocks
 
@@ -338,7 +330,7 @@ define :secondhit do
   end
 end
 
-##thirdhit
+#thirdhit
 define :thirdhit do
   in_thread do
     thirdhitbass1
@@ -360,7 +352,7 @@ define :thirdhit do
   end
 end
 
-##outro
+#outro
 define :outro do
   outropad
 end
@@ -384,7 +376,6 @@ define :arrangement do
     outro
   end
 end
-
 
 #play whole track
 
