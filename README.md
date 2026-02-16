@@ -1,5 +1,3 @@
-## Sonic Pi
-
 # Ambient Electronic Composition
 
 A layered ambient/electronic piece written in Sonic Pi, featuring evolving textures and dynamic soundscapes.
