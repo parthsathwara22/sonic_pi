@@ -1,7 +1,5 @@
 use_bpm 96
 
-
-# Play melody from [note, duration] pairs
 define :melody do |notes, amp: 0.5|
   use_synth :piano
   notes.each do |n, d|
@@ -14,7 +12,6 @@ define :melody do |notes, amp: 0.5|
   end
 end
 
-# Left hand: quarter-note arpeggio (4 beats)
 define :lh_quarter do |notes, amp: 0.4|
   use_synth :piano
   play notes[0], amp: amp, release: 3.5
@@ -27,7 +24,6 @@ define :lh_quarter do |notes, amp: 0.4|
   sleep 1
 end
 
-# Left hand: eighth-note flowing arpeggio (4 beats)
 define :lh_eighth do |notes, amp: 0.35|
   use_synth :piano
   pat = [0, 1, 2, 3, 2, 3, 2, 1]
@@ -38,7 +34,6 @@ define :lh_eighth do |notes, amp: 0.35|
   end
 end
 
-# Play full 4-chord progression with given LH pattern
 define :lh_prog do |chords, style, amp: 0.4|
   chords.each do |ch|
     if style == :quarter
